@@ -12,7 +12,29 @@ Install the dependencies.
 pnpm i --frozen-lockfile
 ```
 
+Download world `pmtiles` from
+[Protomaps Builds](https://maps.protomaps.com/builds) in the `docker/tileserver`
+directory.
+
+```bash
+cd docker/tileserver
+curl -O https://build.protomaps.com/20250818.pmtiles
+```
+
+Download basemaps assets from
+[Protomaps GitHub](https://github.com/protomaps/basemaps-assets) in the
+`docker/tileserver/assets` directory.
+
 ## Development
+
+Deploy the tileserver.
+
+```bash
+cd docker
+docker-compose up tileserver
+```
+
+The tileserver is available at [http://localhost:8080](http://localhost:8080).
 
 Run the frontend in development mode.
 

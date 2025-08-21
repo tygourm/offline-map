@@ -1,3 +1,5 @@
 node_modules/
 dist/
+docker/tileserver/20250818.pmtiles
+docker/tileserver/assets/
 frontend/stats.html

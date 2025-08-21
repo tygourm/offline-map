@@ -1,0 +1,17 @@
+{
+  "options": {
+    "paths": {
+      "styles": "styles",
+      "fonts": "assets/fonts",
+      "sprites": "assets/sprites"
+    },
+    "maxScaleFactor": 2,
+    "serveAllFonts": true,
+    "serveAllStyles": true
+  },
+  "data": {
+    "20250818": {
+      "pmtiles": "20250818.pmtiles"
+    }
+  }
+}
