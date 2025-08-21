@@ -51,11 +51,11 @@ jobs:
     needs: backend-build
     steps:
       - uses: actions/checkout@v5
-      - run: docker build -f docker/backend/Dockerfile -t om-backend:0.0.0 .
+      - run: docker build -f docker/backend/Dockerfile -t om-backend:1.0.0 .
 
   frontend-docker-build:
     runs-on: ubuntu-latest
     needs: frontend-build
     steps:
       - uses: actions/checkout@v5
-      - run: docker build -f docker/frontend/Dockerfile -t om-frontend:0.0.0 .
+      - run: docker build -f docker/frontend/Dockerfile -t om-frontend:1.0.0 .

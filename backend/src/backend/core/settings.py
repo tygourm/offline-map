@@ -11,7 +11,7 @@ class Settings(BaseSettings):
 
     app_debug: bool = False
     app_title: str = "Offline Map"
-    app_version: str = "0.0.0"
+    app_version: str = "1.0.0"
 
     model_config = SettingsConfigDict()
 

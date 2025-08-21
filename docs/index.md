@@ -85,13 +85,13 @@ The frontend is available at [http://localhost:5173](http://localhost:5173).
 Build the backend image.
 
 ```bash
-docker build -f docker/backend/Dockerfile -t om-backend:0.0.0 .
+docker build -f docker/backend/Dockerfile -t om-backend:1.0.0 .
 ```
 
 Build the frontend image.
 
 ```bash
-docker build -f docker/frontend/Dockerfile -t om-frontend:0.0.0 .
+docker build -f docker/frontend/Dockerfile -t om-frontend:1.0.0 .
 ```
 
 Deploy the services.
