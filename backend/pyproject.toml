@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "backend"
+version = "0.0.0"
+requires-python = ">=3.13"
+dependencies = ["fastapi[standard]", "pydantic-settings"]
+
+[project.scripts]
+backend = "backend.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/backend"]

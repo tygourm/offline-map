@@ -1,3 +1,4 @@
+backend/static/
 docker/tileserver/assets/
 frontend/src/routeTree.gen.ts
 frontend/stats.html

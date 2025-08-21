@@ -1,5 +1,9 @@
+.cache/
+.venv/
 node_modules/
 dist/
+backend/src/**/__pycache__/
+backend/static/site/
 docker/tileserver/20250818.pmtiles
 docker/tileserver/assets/
 frontend/stats.html

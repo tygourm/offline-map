@@ -2,8 +2,8 @@
   "name": "offline-map",
   "version": "0.0.0",
   "scripts": {
-    "lint": "prettier -c . && cd frontend && pnpm eslint",
-    "format": "prettier -w ."
+    "lint": "prettier -c . && ruff check . --no-cache && cd frontend && pnpm eslint",
+    "format": "prettier -w . && ruff format . --no-cache"
   },
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {

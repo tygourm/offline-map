@@ -6,8 +6,17 @@ services:
       dockerfile: docker/frontend/Dockerfile
     ports:
       - 3000:80
-    depends_on:
-      - tileserver
+
+  backend:
+    image: om-backend:0.0.0
+    build:
+      context: ..
+      dockerfile: docker/backend/Dockerfile
+    ports:
+      - 8000:8000
+    environment:
+      HOST: 0.0.0.0
+      WORKERS: 1
 
   tileserver:
     image: maptiler/tileserver-gl:v5.4.0
