@@ -27,6 +27,21 @@ The frontend is available at [http://localhost:5173](http://localhost:5173).
 
 ### Docker
 
+Build the frontend image.
+
+```bash
+docker build -f docker/frontend/Dockerfile -t om-frontend:0.0.0 .
+```
+
+Deploy the services.
+
+```bash
+cd docker
+docker-compose up
+```
+
+The app is available at [http://localhost:3000](http://localhost:3000).
+
 ### Distribution
 
 Build the frontend.
