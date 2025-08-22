@@ -1,4 +1,9 @@
-import Map, { NavigationControl, ScaleControl } from "react-map-gl/maplibre";
+import Map, {
+  FullscreenControl,
+  GeolocateControl,
+  NavigationControl,
+  ScaleControl,
+} from "react-map-gl/maplibre";
 
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -24,7 +29,9 @@ export default function AppMap() {
       <ScaleControl position="top-right" />
       <ScaleControl position="top-right" unit="imperial" />
       <ScaleControl position="top-right" unit="nautical" />
+      <FullscreenControl />
       <NavigationControl />
+      <GeolocateControl />
     </Map>
   );
 }
